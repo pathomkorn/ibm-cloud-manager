@@ -1,1 +1,1 @@
-This repository keeps my IBM Cloud Manager with OpenStack knowledge.
+My IBM Cloud Manager with OpenStack Blackboard
