@@ -1,16 +1,17 @@
 #IBM PowerVC Keypair Setup
-## Cloud consumer
+## Cloud Consumer
 * Login IBM Cloud Manager with OpenStack dashboard
 * Navigate `PROJECT` > `Compute` > `Access & Security`
 * Click `Key Pairs` tab
 * Click `Create Key Pair` button
-* Download key pair
+* Download private key file
 * Navigate `PROJECT` > `Compute` > `Access & Security`
 * Click `Key Pairs` tab
 * Select newly created key pair
 * Copy `Public Key` value and save to public key file
 * Send `public key file` and `public key name` to cloud provider
-## Cloud provider
+
+## Cloud Provider
 * Login IBM PowerVC SSH session with root
 * Create [powervcrc](/pathomkorn/ibm-powervc/powervcrc) file
 ```bash
@@ -36,7 +37,7 @@ export OS_PROJECT_DOMAIN_NAME=Default
 ```bash
 # nova keypair-list
  ```
-## Cloud consumer
+## Cloud Consumer
 * Login IBM Cloud Manager with OpenStack dashboard
 * Launch PowerVC instance using key pair
-* 
+* Once instance spawned, connect SSH to instance using downloaded private key file
