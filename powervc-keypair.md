@@ -26,13 +26,13 @@ export OS_PROJECT_DOMAIN_NAME=Default
 ```
  * Sourcing powervcrc file
 ```bash
- source powervcrc
+# source powervcrc
  ```
  * Add cloud consumer key pair to PowerVC
- ```bash
- nova keypair-add --pub_key ${public_key_file} ${public_key_name}
+```bash
+# nova keypair-add --pub_key ${public_key_file} ${public_key_name}
  ```
  * Verify key pair added in PowerVC
- ```bash
-  * nova keypair-list
-  ```
+```bash
+# nova keypair-list
+ ```
