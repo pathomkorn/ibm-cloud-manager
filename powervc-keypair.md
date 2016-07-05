@@ -36,3 +36,6 @@ export OS_PROJECT_DOMAIN_NAME=Default
 ```bash
 # nova keypair-list
  ```
+ * Cloud consumer
+  * Login IBM Cloud Manager with OpenStack dashboard
+  * Launch PowerVC instance using key pair
