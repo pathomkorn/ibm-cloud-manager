@@ -13,7 +13,7 @@
 
 ## Cloud Provider
 * Login IBM PowerVC SSH session with root
-* Create [powervcrc](/pathomkorn/ibm-powervc/powervcrc) file
+* Create `powervcrc` file
 ```bash
 export OS_USERNAME=root
 export OS_PASSWORD=${powervc_password}
