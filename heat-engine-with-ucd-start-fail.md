@@ -34,6 +34,7 @@ Sep 16 20:54:32 icm.piggy.io systemd[1]: openstack-heat-engine.service failed.
 # cd /usr/lib/heat/ibm-cloud-ext/resources/
 # vi heat_version_helper.py
 ```
+
 * Original code
 ```
 MAJOR_VERSIONS = {
@@ -48,6 +49,7 @@ MAJOR_VERSIONS = {
     "ocata": ("8.0.0", "9.0.0")
 }
 ```
+
 * Modified code
 ```
 MAJOR_VERSIONS = {
@@ -69,9 +71,11 @@ MAJOR_VERSIONS = {
 ```
 
 * Modify IBM UCD heat extension on kilo line from ```"kilo": ("2015.1.0", "2015.1.4"),``` to ```"kilo": ("2015.1.0", "2015.1.5"),```
-# cd /usr/lib/heat/ibm-sw-orch/heat
+```bash
+# cd /usr/lib/heat/ibm-sw-orch/heat/
 # vi heat_version_helper.py
 ```
+
 * Original code
 ```
 MAJOR_VERSIONS = {
@@ -86,6 +90,7 @@ MAJOR_VERSIONS = {
     "ocata": ("8.0.0", "9.0.0")
 }
 ```
+
 * Modified code
 ```
 MAJOR_VERSIONS = {
@@ -129,6 +134,7 @@ Sep 16 21:04:08 icm.piggy.io heat-engine[12713]: 2017-09-16 21:04:08.569 12727 I
 Sep 16 21:04:08 icm.piggy.io heat-engine[12713]: 2017-09-16 21:04:08.588 12726 INFO oslo_messaging._drivers.impl_rabbit [req-f571c600-c2d1-434f-b3a2-722d3919a082 - d2b94b9f1fab4c9e983e07ef0c1e8e97] Connecting to AMQP server on 172.16.6.41:5671
 Sep 16 21:04:08 icm.piggy.io heat-engine[12713]: 2017-09-16 21:04:08.619 12727 INFO oslo_messaging._drivers.impl_rabbit [req-17e75d56-ffa9-4df9-b9ec-3d003c22d7da - d2b94b9f1fab4c9e983e07ef0c1e8e97] Connected to AMQP server on 172.16.6.41:5671
 Sep 16 21:04:08 icm.piggy.io heat-engine[12713]: 2017-09-16 21:04:08.625 12726 INFO oslo_messaging._drivers.impl_rabbit [req-f571c600-c2d1-434f-b3a2-722d3919a082 - d2b94b9f1fab4c9e983e07ef0c1e8e97] Connected to AMQP server on 172.16.6.41:5671
+```
 
 * Verify heat resource type
 ```bash
