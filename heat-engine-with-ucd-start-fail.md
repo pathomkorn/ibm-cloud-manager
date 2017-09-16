@@ -1,4 +1,4 @@
-# Iopenstack-heat-engine Service Starts Fail When Integrate with IBM UCD 6.2.5.2
+# openstack-heat-engine Service Starts Fail When Integrate with IBM UCD 6.2.5.2
 
 * Verify that openstack-heat-engine fails because of heat engine version check
 
